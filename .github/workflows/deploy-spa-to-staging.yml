@@ -1,0 +1,31 @@
+name: Deploy SPA to Staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout:
+    name: Checkout
+    runs-on: ubuntu-latest
+    environment: staging
+
+    if: github.ref == 'refs/heads/staging'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+  deploy:
+    if: github.ref == 'refs/heads/staging'
+    uses: ./.github/workflows/deploy-spa-on-call.yml
+    with:
+      ENVIRONMENT: staging
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.STAGING_AWS_REGION }}
+      S3_BUCKET: ${{ secrets.STAGING_S3_FRONTEND_BUCKET }}
+      CLOUDFRONT_DIST_ID: ${{ secrets.STAGING_CLOUDFRONT_DIST_ID }}
+      REACT_APP_GOOGLE_RECAPTCHA_KEY: ${{ secrets.STAGING_REACT_APP_GOOGLE_RECAPTCHA_KEY }}
+      REACT_APP_GOOGLE_MAPS_KEY: ${{ secrets.STAGING_REACT_APP_GOOGLE_MAPS_KEY }}
+      REACT_APP_GOOGLE_ANALYTICS_ID: ${{ secrets.STAGING_REACT_APP_GOOGLE_ANALYTICS_ID }}

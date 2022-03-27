@@ -1,0 +1,1 @@
+Your pending subject "{{$subject}}" has been rejected 

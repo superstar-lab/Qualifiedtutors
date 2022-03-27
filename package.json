@@ -1,0 +1,22 @@
+{
+  "name": "QualifiedTutorsMonorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "provision-prod-infrastructure": "node scripts/provision-prod-infrastructure.js",
+    "destroy-prod-infrastructure": "node scripts/destroy-prod-infrastructure.js",
+    "provision-staging-infrastructure": "node scripts/provision-staging-infrastructure.js",
+    "destroy-staging-infrastructure": "node scripts/destroy-staging-infrastructure.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "zip-local": "^0.3.5"
+  }
+}

@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Qualified Tutors API Documentation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../docs/css/theme-default.style.css" media="screen">
+    <link rel="stylesheet" href="../docs/css/theme-default.print.css" media="print">
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/obsidian.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js"></script>
+
+    <style id="language-style">
+        /* starts out as display none and is replaced with js later  */
+                    body .content .javascript-example code { display: none; }
+                    body .content .php-example code { display: none; }
+                    body .content .bash-example code { display: none; }
+            </style>
+
+
+    <script src="../docs/js/theme-default-3.20.0.js"></script>
+
+</head>
+
+<body data-languages="[&quot;javascript&quot;,&quot;php&quot;,&quot;bash&quot;]">
+
+<a href="#" id="nav-button">
+    <span>
+        MENU
+        <img src="../docs/images/navbar.png" alt="navbar-image" />
+    </span>
+</a>
+<div class="tocify-wrapper">
+    
+            <div class="lang-selector">
+                                            <button type="button" class="lang-button" data-language-name="javascript">javascript</button>
+                                            <button type="button" class="lang-button" data-language-name="php">php</button>
+                                            <button type="button" class="lang-button" data-language-name="bash">bash</button>
+                    </div>
+    
+    <div class="search">
+        <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+
+    <div id="toc">
+                                                                            <ul id="tocify-header-0" class="tocify-header">
+                    <li class="tocify-item level-1" data-unique="introduction">
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                                            
+                                                                    </ul>
+                                                <ul id="tocify-header-1" class="tocify-header">
+                    <li class="tocify-item level-1" data-unique="authenticating-requests">
+                        <a href="#authenticating-requests">Authenticating requests</a>
+                    </li>
+                                            
+                                                </ul>
+                    
+                    <ul id="tocify-header-2" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="endpoints">
+                    <a href="#endpoints">Endpoints</a>
+                </li>
+                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETsanctum-csrf-cookie">
+                        <a href="#endpoints-GETsanctum-csrf-cookie">Return an empty response simply to trigger the storage of the CSRF cookie in the browser.</a>
+                    </li>
+                                                    </ul>
+                            </ul>
+                    <ul id="tocify-header-3" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="user-management">
+                    <a href="#user-management">User Management</a>
+                </li>
+                                    <ul id="tocify-subheader-user-management" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="user-management-POSTregister-client">
+                        <a href="#user-management-POSTregister-client">Register a new Client type user (student/parent)</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="user-management-GETme">
+                        <a href="#user-management-GETme">Me</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="user-management-POSTlogin">
+                        <a href="#user-management-POSTlogin">Login</a>
+                    </li>
+                                                    </ul>
+                            </ul>
+        
+                        
+            </div>
+
+            <ul class="toc-footer" id="toc-footer">
+                            <li><a href="../docs/collection.json">View Postman collection</a></li>
+                            <li><a href="../docs/openapi.yaml">View OpenAPI spec</a></li>
+                            <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
+                    </ul>
+        <ul class="toc-footer" id="last-updated">
+        <li>Last updated: January 2 2022</li>
+    </ul>
+</div>
+
+<div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+        <h1 id="introduction">Introduction</h1>
+<p>REST API for access to and minipulation of the Qualified Tutors data model.</p>
+<p>This documentation aims to provide all the information you need to work with our API.</p>
+<blockquote>
+<p>Base URL</p>
+</blockquote>
+<pre><code class="language-yaml">http://localhost:8000</code></pre>
+
+        <h1 id="authenticating-requests">Authenticating requests</h1>
+<p>This API is authenticated by sending </p>
+<p>All authenticated endpoints are marked with a <code>requires authentication</code> badge in the documentation below.</p>
+<p>Laravel session based auth is used for this API. To auth/use the API first make a successful call to the login endpoint and include the value returned in the Set-Cookie header in future requests as a header called Cookie. <a href="https://laravel.com/docs/8.x/sanctum#spa-authentication">https://laravel.com/docs/8.x/sanctum#spa-authentication</a></p>
+
+        <h1 id="endpoints">Endpoints</h1>
+
+    
+
+            <h2 id="endpoints-GETsanctum-csrf-cookie">Return an empty response simply to trigger the storage of the CSRF cookie in the browser.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETsanctum-csrf-cookie">
+<blockquote>Example request:</blockquote>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/sanctum/csrf-cookie"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;get(
+    'http://localhost:8000/sanctum/csrf-cookie',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/sanctum/csrf-cookie" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETsanctum-csrf-cookie">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+access-control-allow-origin: *
+set-cookie: XSRF-TOKEN=eyJpdiI6IjVTQTdac3dac0lyWGFIVWZPbFBVTXc9PSIsInZhbHVlIjoiVVlZeFM0eEt5MzNOZ3FEWG5HZ3dhQ1B1bGZiUlFLRlZTWkxrTHdkNWs4M3ZBWnJHWGNoMjdMMS84TTNBaElBME1VaG4vcCtCTzNMU2xwdm5kc0szeEdFTUdlRHl6eUd4S1FoSUpWOFZSVUt2aGxnc0NRdVY1MWhGbXRLbXZNeDMiLCJtYWMiOiJmMzE0YjYwZWI5Yzc5YTNjN2JmZWQ5YTc2MTFkNTYwNWI2ODlkZjkwODRhZWJkZGVkOGQxZGNkYmM4NzIzNDU2IiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=/; domain=localhost; samesite=lax; qualifiedtutorsapi_session=eyJpdiI6IkRLaFBuTGNyWStvdHZ6UWwreTJjQVE9PSIsInZhbHVlIjoibkU0VkhNL21MOFBpWTBiVStObEhBMGxrYWhrTnZUKzVwbzh6eEVTNExkWTBtLzZDKzgxMk9ZNnNMZDk2SGlvR0drKzNMbmNBdUN0K3R5VGh5WGVONXQ5N0ttQ1o2QklkM1VnN1djL0NJcnpxTTlpVk80eUR1YVA3NDArNSt0d0YiLCJtYWMiOiIzNTAwYjY0YjZiMzViMGIyMGJlMzU3N2QyMzRmMDliMDIwZjRiNWFlODZlNzU5OTViYmI0N2ZiOTc4NjEwM2QzIiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=/; domain=localhost; httponly; samesite=lax
+ </code></pre>
+        </details>         <pre>
+<code>[Empty response]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETsanctum-csrf-cookie" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETsanctum-csrf-cookie"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETsanctum-csrf-cookie"></code></pre>
+</span>
+<span id="execution-error-GETsanctum-csrf-cookie" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETsanctum-csrf-cookie"></code></pre>
+</span>
+<form id="form-GETsanctum-csrf-cookie" data-method="GET"
+      data-path="sanctum/csrf-cookie"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETsanctum-csrf-cookie', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>sanctum/csrf-cookie</code></b>
+        </p>
+                    </form>
+
+        <h1 id="user-management">User Management</h1>
+
+    <p>Endpoints for registering the various types of user.</p>
+
+            <h2 id="user-management-POSTregister-client">Register a new Client type user (student/parent)</h2>
+
+<p>
+</p>
+
+<p>Registers a new student for use with the site.</p>
+<aside class="notice">Once registered they will still need to login.</aside>
+
+<span id="example-requests-POSTregister-client">
+<blockquote>Example request:</blockquote>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/register/client"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;post(
+    'http://localhost:8000/register/client',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/register/client" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTregister-client">
+</span>
+<span id="execution-results-POSTregister-client" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTregister-client"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTregister-client"></code></pre>
+</span>
+<span id="execution-error-POSTregister-client" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTregister-client"></code></pre>
+</span>
+<form id="form-POSTregister-client" data-method="POST"
+      data-path="register/client"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTregister-client', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>register/client</code></b>
+        </p>
+                    </form>
+
+            <h2 id="user-management-GETme">Me</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Returns information about the currently authenticated user</p>
+
+<span id="example-requests-GETme">
+<blockquote>Example request:</blockquote>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/me"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;get(
+    'http://localhost:8000/me',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/me" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETme">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+set-cookie: qualifiedtutorsapi_session=eyJpdiI6ImlPV1A2dGtuOGhvMUZsbUJ1dUpKamc9PSIsInZhbHVlIjoiYkxJTHZUK1JwQzNVQ0htZ1A1OE42ZVEwcWdva0c2STQ5OXhaSVlDWkVTMkRkcHY0ck5GZHJKRVE1c0luZlN0ek44bU43R1JEbGlXQnkrSVB0em1lVzF3c1g0c1VVaFNvZjY0eUtxQnkrUVhmQWI1TWR4aEYxejF6cFpwamptb0QiLCJtYWMiOiI5YTFmNjRjNDQzZjFlYTIxM2EzOGMwY2ZjZDY5ZTg2NTE3MGZjMTgxMTRkMzFhMDZiNzRiNmE2YWRjMWU3NDllIiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=/; domain=localhost; httponly; samesite=lax
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETme" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETme"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETme"></code></pre>
+</span>
+<span id="execution-error-GETme" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETme"></code></pre>
+</span>
+<form id="form-GETme" data-method="GET"
+      data-path="me"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETme', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>me</code></b>
+        </p>
+                    </form>
+
+            <h2 id="user-management-POSTlogin">Login</h2>
+
+<p>
+</p>
+
+<p>Logs user into the application.
+Successful responses will contain a session cookie that must be presented with future requests.</p>
+
+<span id="example-requests-POSTlogin">
+<blockquote>Example request:</blockquote>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/login"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "email": "laurie41@example.com",
+    "password": "voluptatum"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;post(
+    'http://localhost:8000/login',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'json' =&gt; [
+            'email' =&gt; 'laurie41@example.com',
+            'password' =&gt; 'voluptatum',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/login" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"email\": \"laurie41@example.com\",
+    \"password\": \"voluptatum\"
+}"
+</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTlogin">
+</span>
+<span id="execution-results-POSTlogin" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTlogin"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTlogin"></code></pre>
+</span>
+<span id="execution-error-POSTlogin" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTlogin"></code></pre>
+</span>
+<form id="form-POSTlogin" data-method="POST"
+      data-path="login"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTlogin', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>login</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="POSTlogin"
+               value="laurie41@example.com"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid email address.</p>
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="POSTlogin"
+               value="voluptatum"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+    
+
+        
+    </div>
+    <div class="dark-box">
+                    <div class="lang-selector">
+                                                        <button type="button" class="lang-button" data-language-name="javascript">javascript</button>
+                                                        <button type="button" class="lang-button" data-language-name="php">php</button>
+                                                        <button type="button" class="lang-button" data-language-name="bash">bash</button>
+                            </div>
+            </div>
+</div>
+</body>
+</html>

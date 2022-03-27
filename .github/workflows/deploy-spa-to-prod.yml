@@ -1,0 +1,28 @@
+name: Deploy SPA to Production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout:
+    name: Checkout
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+  deploy:
+    uses: ./.github/workflows/deploy-spa-on-call.yml
+    with:
+      ENVIRONMENT: prod
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      S3_BUCKET: ${{ secrets.S3_FRONTEND_BUCKET }}
+      CLOUDFRONT_DIST_ID: ${{ secrets.CLOUDFRONT_DIST_ID }}
+      REACT_APP_GOOGLE_RECAPTCHA_KEY: ${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_KEY }}
+      REACT_APP_GOOGLE_MAPS_KEY: ${{ secrets.REACT_APP_GOOGLE_MAPS_KEY }}
+      REACT_APP_GOOGLE_ANALYTICS_ID: ${{ secrets.REACT_APP_GOOGLE_ANALYTICS_ID }}

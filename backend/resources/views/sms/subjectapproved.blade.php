@@ -1,0 +1,1 @@
+Your pending subject "{{$subject}}" has been approved {{isset($new_name) ? " but has been renamed to $new_name" : ''}} {{isset($existing_subject) ? " but has been reassigned to the existing subject \"{{$existing_subject}}\"" :""}}

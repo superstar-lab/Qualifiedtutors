@@ -1,0 +1,745 @@
+subject,level,category
+Further Maths,A-Level,Maths
+Further Maths,International Baccalaureate,Maths
+Further Maths,Degree (or higher),Maths
+Further Maths,Scottish Highers,Maths
+Maths,Primary (up to 11 years),Maths
+Maths,GCSE (15-16 years),Maths
+Maths,A-Level,Maths
+Maths,International Baccalaureate,Maths
+Maths,Degree (or higher),Maths
+Maths,Nationals 4 and 5,Maths
+Maths,Scottish Highers,Maths
+Mechanics,A-Level,Maths
+Mechanics,Degree (or higher),Maths
+Mechanics,Scottish Highers,Maths
+Pure Maths,A-Level,Maths
+Pure Maths,Degree (or higher),Maths
+Pure Maths,Scottish Highers,Maths
+Statistics,A-Level,Maths
+Statistics,Degree (or higher),Maths
+Statistics,Scottish Highers,Maths
+English,Primary (up to 11 years),English
+English,GCSE (15-16 years),English
+English,A-Level,English
+English,International Baccalaureate,English
+English,Degree (or higher),English
+English,Nationals 4 and 5,English
+English,Scottish Highers,English
+English Language,Primary (up to 11 years),English
+English Language,GCSE (15-16 years),English
+English Language,A-Level,English
+English Language,International Baccalaureate,English
+English Language,Degree (or higher),English
+English Language,Nationals 4 and 5,English
+English Language,Scottish Highers,English
+English Literature,Primary (up to 11 years),English
+English Literature,GCSE (15-16 years),English
+English Literature,A-Level,English
+English Literature,International Baccalaureate,English
+English Literature,Degree (or higher),English
+English Literature,Nationals 4 and 5,English
+English Literature,Scottish Highers,English
+Phonics,Primary (up to 11 years),English
+Reading,Primary (up to 11 years),English
+Astronomy,GCSE (15-16 years),Science
+Astronomy,A-Level,Science
+Astronomy,International Baccalaureate,Science
+Astronomy,Degree (or higher),Science
+Astronomy,Nationals 4 and 5,Science
+Astronomy,Scottish Highers,Science
+Biochemistry,GCSE (15-16 years),Science
+Biochemistry,A-Level,Science
+Biochemistry,International Baccalaureate,Science
+Biochemistry,Degree (or higher),Science
+Biochemistry,Nationals 4 and 5,Science
+Biochemistry,Scottish Highers,Science
+Biology,GCSE (15-16 years),Science
+Biology,A-Level,Science
+Biology,International Baccalaureate,Science
+Biology,Degree (or higher),Science
+Biology,Nationals 4 and 5,Science
+Biology,Scottish Highers,Science
+Biomedical Science,GCSE (15-16 years),Science
+Biomedical Science,A-Level,Science
+Biomedical Science,International Baccalaureate,Science
+Biomedical Science,Degree (or higher),Science
+Biomedical Science,Nationals 4 and 5,Science
+Biomedical Science,Scottish Highers,Science
+Chemistry,GCSE (15-16 years),Science
+Chemistry,A-Level,Science
+Chemistry,International Baccalaureate,Science
+Chemistry,Degree (or higher),Science
+Chemistry,Nationals 4 and 5,Science
+Chemistry,Scottish Highers,Science
+Environmental Science,GCSE (15-16 years),Science
+Environmental Science,A-Level,Science
+Environmental Science,International Baccalaureate,Science
+Environmental Science,Degree (or higher),Science
+Environmental Science,Nationals 4 and 5,Science
+Environmental Science,Scottish Highers,Science
+Geology,GCSE (15-16 years),Science
+Geology,A-Level,Science
+Geology,International Baccalaureate,Science
+Geology,Degree (or higher),Science
+Geology,Nationals 4 and 5,Science
+Geology,Scottish Highers,Science
+Physics,GCSE (15-16 years),Science
+Physics,A-Level,Science
+Physics,International Baccalaureate,Science
+Physics,Degree (or higher),Science
+Physics,Nationals 4 and 5,Science
+Physics,Scottish Highers,Science
+Physiology,GCSE (15-16 years),Science
+Physiology,A-Level,Science
+Physiology,International Baccalaureate,Science
+Physiology,Degree (or higher),Science
+Physiology,Nationals 4 and 5,Science
+Physiology,Scottish Highers,Science
+Science,Primary (up to 11 years),Science
+Science,GCSE (15-16 years),Science
+Science,A-Level,Science
+Science,International Baccalaureate,Science
+Science,Nationals 4 and 5,Science
+Science,Scottish Highers,Science
+Arabic,Primary (up to 11 years),Languages
+Arabic,GCSE (15-16 years),Languages
+Arabic,A-Level,Languages
+Arabic,International Baccalaureate,Languages
+Arabic,Nationals 4 and 5,Languages
+Arabic,Scottish Highers,Languages
+Bulgarian,Primary (up to 11 years),Languages
+Bulgarian,GCSE (15-16 years),Languages
+Bulgarian,A-Level,Languages
+Bulgarian,International Baccalaureate,Languages
+Bulgarian,Nationals 4 and 5,Languages
+Bulgarian,Scottish Highers,Languages
+Cantonese,Primary (up to 11 years),Languages
+Cantonese,GCSE (15-16 years),Languages
+Cantonese,A-Level,Languages
+Cantonese,International Baccalaureate,Languages
+Cantonese,Nationals 4 and 5,Languages
+Cantonese,Scottish Highers,Languages
+Croatian,Primary (up to 11 years),Languages
+Croatian,GCSE (15-16 years),Languages
+Croatian,A-Level,Languages
+Croatian,International Baccalaureate,Languages
+Croatian,Nationals 4 and 5,Languages
+Croatian,Scottish Highers,Languages
+Czech,Primary (up to 11 years),Languages
+Czech,GCSE (15-16 years),Languages
+Czech,A-Level,Languages
+Czech,International Baccalaureate,Languages
+Czech,Nationals 4 and 5,Languages
+Czech,Scottish Highers,Languages
+Danish,Primary (up to 11 years),Languages
+Danish,GCSE (15-16 years),Languages
+Danish,A-Level,Languages
+Danish,International Baccalaureate,Languages
+Danish,Nationals 4 and 5,Languages
+Danish,Scottish Highers,Languages
+Dutch,Primary (up to 11 years),Languages
+Dutch,GCSE (15-16 years),Languages
+Dutch,A-Level,Languages
+Dutch,International Baccalaureate,Languages
+Dutch,Nationals 4 and 5,Languages
+Dutch,Scottish Highers,Languages
+English as a Foreign Language EFL,Primary (up to 11 years),Languages
+English as a Foreign Language EFL,GCSE (15-16 years),Languages
+English as a Foreign Language EFL,A-Level,Languages
+English as a Foreign Language EFL,International Baccalaureate,Languages
+English as a Foreign Language EFL,Nationals 4 and 5,Languages
+English as a Foreign Language EFL,Scottish Highers,Languages
+Estonian,Primary (up to 11 years),Languages
+Estonian,GCSE (15-16 years),Languages
+Estonian,A-Level,Languages
+Estonian,International Baccalaureate,Languages
+Estonian,Nationals 4 and 5,Languages
+Estonian,Scottish Highers,Languages
+Farsi,Primary (up to 11 years),Languages
+Farsi,GCSE (15-16 years),Languages
+Farsi,A-Level,Languages
+Farsi,International Baccalaureate,Languages
+Farsi,Nationals 4 and 5,Languages
+Farsi,Scottish Highers,Languages
+Finnish,Primary (up to 11 years),Languages
+Finnish,GCSE (15-16 years),Languages
+Finnish,A-Level,Languages
+Finnish,International Baccalaureate,Languages
+Finnish,Nationals 4 and 5,Languages
+Finnish,Scottish Highers,Languages
+French,Primary (up to 11 years),Languages
+French,GCSE (15-16 years),Languages
+French,A-Level,Languages
+French,International Baccalaureate,Languages
+French,Nationals 4 and 5,Languages
+French,Scottish Highers,Languages
+Gaelic,Primary (up to 11 years),Languages
+Gaelic,GCSE (15-16 years),Languages
+Gaelic,A-Level,Languages
+Gaelic,International Baccalaureate,Languages
+Gaelic,Nationals 4 and 5,Languages
+Gaelic,Scottish Highers,Languages
+German,Primary (up to 11 years),Languages
+German,GCSE (15-16 years),Languages
+German,A-Level,Languages
+German,International Baccalaureate,Languages
+German,Nationals 4 and 5,Languages
+German,Scottish Highers,Languages
+Greek Classical,Primary (up to 11 years),Languages
+Greek Classical,GCSE (15-16 years),Languages
+Greek Classical,A-Level,Languages
+Greek Classical,International Baccalaureate,Languages
+Greek Classical,Nationals 4 and 5,Languages
+Greek Classical,Scottish Highers,Languages
+Greek Modern,Primary (up to 11 years),Languages
+Greek Modern,GCSE (15-16 years),Languages
+Greek Modern,A-Level,Languages
+Greek Modern,International Baccalaureate,Languages
+Greek Modern,Nationals 4 and 5,Languages
+Greek Modern,Scottish Highers,Languages
+Gujarati,Primary (up to 11 years),Languages
+Gujarati,GCSE (15-16 years),Languages
+Gujarati,A-Level,Languages
+Gujarati,International Baccalaureate,Languages
+Gujarati,Nationals 4 and 5,Languages
+Gujarati,Scottish Highers,Languages
+Hebrew,Primary (up to 11 years),Languages
+Hebrew,GCSE (15-16 years),Languages
+Hebrew,A-Level,Languages
+Hebrew,International Baccalaureate,Languages
+Hebrew,Nationals 4 and 5,Languages
+Hebrew,Scottish Highers,Languages
+Hindi,Primary (up to 11 years),Languages
+Hindi,GCSE (15-16 years),Languages
+Hindi,A-Level,Languages
+Hindi,International Baccalaureate,Languages
+Hindi,Nationals 4 and 5,Languages
+Hindi,Scottish Highers,Languages
+Hungarian,Primary (up to 11 years),Languages
+Hungarian,GCSE (15-16 years),Languages
+Hungarian,A-Level,Languages
+Hungarian,International Baccalaureate,Languages
+Hungarian,Nationals 4 and 5,Languages
+Hungarian,Scottish Highers,Languages
+IELTS and ESOL,Primary (up to 11 years),Languages
+IELTS and ESOL,GCSE (15-16 years),Languages
+IELTS and ESOL,A-Level,Languages
+IELTS and ESOL,International Baccalaureate,Languages
+IELTS and ESOL,Nationals 4 and 5,Languages
+IELTS and ESOL,Scottish Highers,Languages
+Irish,Primary (up to 11 years),Languages
+Irish,GCSE (15-16 years),Languages
+Irish,A-Level,Languages
+Irish,International Baccalaureate,Languages
+Irish,Nationals 4 and 5,Languages
+Irish,Scottish Highers,Languages
+Italian,Primary (up to 11 years),Languages
+Italian,GCSE (15-16 years),Languages
+Italian,A-Level,Languages
+Italian,International Baccalaureate,Languages
+Italian,Nationals 4 and 5,Languages
+Italian,Scottish Highers,Languages
+Japanese,Primary (up to 11 years),Languages
+Japanese,GCSE (15-16 years),Languages
+Japanese,A-Level,Languages
+Japanese,International Baccalaureate,Languages
+Japanese,Nationals 4 and 5,Languages
+Japanese,Scottish Highers,Languages
+Kashmiri,Primary (up to 11 years),Languages
+Kashmiri,GCSE (15-16 years),Languages
+Kashmiri,A-Level,Languages
+Kashmiri,International Baccalaureate,Languages
+Kashmiri,Nationals 4 and 5,Languages
+Kashmiri,Scottish Highers,Languages
+Korean,Primary (up to 11 years),Languages
+Korean,GCSE (15-16 years),Languages
+Korean,A-Level,Languages
+Korean,International Baccalaureate,Languages
+Korean,Nationals 4 and 5,Languages
+Korean,Scottish Highers,Languages
+Languages,Primary (up to 11 years),Languages
+Languages,GCSE (15-16 years),Languages
+Languages,A-Level,Languages
+Languages,International Baccalaureate,Languages
+Languages,Nationals 4 and 5,Languages
+Languages,Scottish Highers,Languages
+Latin,Primary (up to 11 years),Languages
+Latin,GCSE (15-16 years),Languages
+Latin,A-Level,Languages
+Latin,International Baccalaureate,Languages
+Latin,Nationals 4 and 5,Languages
+Latin,Scottish Highers,Languages
+Lithuanian,Primary (up to 11 years),Languages
+Lithuanian,GCSE (15-16 years),Languages
+Lithuanian,A-Level,Languages
+Lithuanian,International Baccalaureate,Languages
+Lithuanian,Nationals 4 and 5,Languages
+Lithuanian,Scottish Highers,Languages
+Malay,Primary (up to 11 years),Languages
+Malay,GCSE (15-16 years),Languages
+Malay,A-Level,Languages
+Malay,International Baccalaureate,Languages
+Malay,Nationals 4 and 5,Languages
+Malay,Scottish Highers,Languages
+Mandarin,Primary (up to 11 years),Languages
+Mandarin,GCSE (15-16 years),Languages
+Mandarin,A-Level,Languages
+Mandarin,International Baccalaureate,Languages
+Mandarin,Nationals 4 and 5,Languages
+Mandarin,Scottish Highers,Languages
+Norwegian,Primary (up to 11 years),Languages
+Norwegian,GCSE (15-16 years),Languages
+Norwegian,A-Level,Languages
+Norwegian,International Baccalaureate,Languages
+Norwegian,Nationals 4 and 5,Languages
+Norwegian,Scottish Highers,Languages
+Persian,Primary (up to 11 years),Languages
+Persian,GCSE (15-16 years),Languages
+Persian,A-Level,Languages
+Persian,International Baccalaureate,Languages
+Persian,Nationals 4 and 5,Languages
+Persian,Scottish Highers,Languages
+Polish,Primary (up to 11 years),Languages
+Polish,GCSE (15-16 years),Languages
+Polish,A-Level,Languages
+Polish,International Baccalaureate,Languages
+Polish,Nationals 4 and 5,Languages
+Polish,Scottish Highers,Languages
+Portuguese,Primary (up to 11 years),Languages
+Portuguese,GCSE (15-16 years),Languages
+Portuguese,A-Level,Languages
+Portuguese,International Baccalaureate,Languages
+Portuguese,Nationals 4 and 5,Languages
+Portuguese,Scottish Highers,Languages
+Punjabi,Primary (up to 11 years),Languages
+Punjabi,GCSE (15-16 years),Languages
+Punjabi,A-Level,Languages
+Punjabi,International Baccalaureate,Languages
+Punjabi,Nationals 4 and 5,Languages
+Punjabi,Scottish Highers,Languages
+Romanian,Primary (up to 11 years),Languages
+Romanian,GCSE (15-16 years),Languages
+Romanian,A-Level,Languages
+Romanian,International Baccalaureate,Languages
+Romanian,Nationals 4 and 5,Languages
+Romanian,Scottish Highers,Languages
+Russian,Primary (up to 11 years),Languages
+Russian,GCSE (15-16 years),Languages
+Russian,A-Level,Languages
+Russian,International Baccalaureate,Languages
+Russian,Nationals 4 and 5,Languages
+Russian,Scottish Highers,Languages
+Serbian,Primary (up to 11 years),Languages
+Serbian,GCSE (15-16 years),Languages
+Serbian,A-Level,Languages
+Serbian,International Baccalaureate,Languages
+Serbian,Nationals 4 and 5,Languages
+Serbian,Scottish Highers,Languages
+Sign Language,Primary (up to 11 years),Languages
+Sign Language,GCSE (15-16 years),Languages
+Sign Language,A-Level,Languages
+Sign Language,International Baccalaureate,Languages
+Sign Language,Nationals 4 and 5,Languages
+Sign Language,Scottish Highers,Languages
+Slovak,Primary (up to 11 years),Languages
+Slovak,GCSE (15-16 years),Languages
+Slovak,A-Level,Languages
+Slovak,International Baccalaureate,Languages
+Slovak,Nationals 4 and 5,Languages
+Slovak,Scottish Highers,Languages
+Spanish,Primary (up to 11 years),Languages
+Spanish,GCSE (15-16 years),Languages
+Spanish,A-Level,Languages
+Spanish,International Baccalaureate,Languages
+Spanish,Nationals 4 and 5,Languages
+Spanish,Scottish Highers,Languages
+Swedish,Primary (up to 11 years),Languages
+Swedish,GCSE (15-16 years),Languages
+Swedish,A-Level,Languages
+Swedish,International Baccalaureate,Languages
+Swedish,Nationals 4 and 5,Languages
+Swedish,Scottish Highers,Languages
+Tamil,Primary (up to 11 years),Languages
+Tamil,GCSE (15-16 years),Languages
+Tamil,A-Level,Languages
+Tamil,International Baccalaureate,Languages
+Tamil,Nationals 4 and 5,Languages
+Tamil,Scottish Highers,Languages
+Telugu,Primary (up to 11 years),Languages
+Telugu,GCSE (15-16 years),Languages
+Telugu,A-Level,Languages
+Telugu,International Baccalaureate,Languages
+Telugu,Nationals 4 and 5,Languages
+Telugu,Scottish Highers,Languages
+Thai,Primary (up to 11 years),Languages
+Thai,GCSE (15-16 years),Languages
+Thai,A-Level,Languages
+Thai,International Baccalaureate,Languages
+Thai,Nationals 4 and 5,Languages
+Thai,Scottish Highers,Languages
+Turkish,Primary (up to 11 years),Languages
+Turkish,GCSE (15-16 years),Languages
+Turkish,A-Level,Languages
+Turkish,International Baccalaureate,Languages
+Turkish,Nationals 4 and 5,Languages
+Turkish,Scottish Highers,Languages
+Ukrainian,Primary (up to 11 years),Languages
+Ukrainian,GCSE (15-16 years),Languages
+Ukrainian,A-Level,Languages
+Ukrainian,International Baccalaureate,Languages
+Ukrainian,Nationals 4 and 5,Languages
+Ukrainian,Scottish Highers,Languages
+Urdu,Primary (up to 11 years),Languages
+Urdu,GCSE (15-16 years),Languages
+Urdu,A-Level,Languages
+Urdu,International Baccalaureate,Languages
+Urdu,Nationals 4 and 5,Languages
+Urdu,Scottish Highers,Languages
+Vietnamese,Primary (up to 11 years),Languages
+Vietnamese,GCSE (15-16 years),Languages
+Vietnamese,A-Level,Languages
+Vietnamese,International Baccalaureate,Languages
+Vietnamese,Nationals 4 and 5,Languages
+Vietnamese,Scottish Highers,Languages
+Welsh,Primary (up to 11 years),Languages
+Welsh,GCSE (15-16 years),Languages
+Welsh,A-Level,Languages
+Welsh,International Baccalaureate,Languages
+Welsh,Nationals 4 and 5,Languages
+Welsh,Scottish Highers,Languages
+Music,Primary (up to 11 years),Music
+Music,GCSE (15-16 years),Music
+Music,A-Level,Music
+Music,Degree (or higher),Music
+Music,Nationals 4 and 5,Music
+Music Production,Degree (or higher),Music
+Anthropology,A-Level,Humanities & Arts
+Anthropology,Degree (or higher),Humanities & Arts
+Anthropology,Scottish Highers,Humanities & Arts
+Archaeology,A-Level,Humanities & Arts
+Archaeology,Degree (or higher),Humanities & Arts
+Archaeology,Scottish Highers,Humanities & Arts
+Art,Primary (up to 11 years),Humanities & Arts
+Art,GCSE (15-16 years),Humanities & Arts
+Art,A-Level,Humanities & Arts
+Art,International Baccalaureate,Humanities & Arts
+Art,Degree (or higher),Humanities & Arts
+Art,Nationals 4 and 5,Humanities & Arts
+Art,Scottish Highers,Humanities & Arts
+Citizenship,GCSE (15-16 years),Humanities & Arts
+Citizenship,A-Level,Humanities & Arts
+Citizenship,International Baccalaureate,Humanities & Arts
+Citizenship,Degree (or higher),Humanities & Arts
+Citizenship,Nationals 4 and 5,Humanities & Arts
+Citizenship,Scottish Highers,Humanities & Arts
+Classics,GCSE (15-16 years),Humanities & Arts
+Classics,A-Level,Humanities & Arts
+Classics,International Baccalaureate,Humanities & Arts
+Classics,Degree (or higher),Humanities & Arts
+Classics,Nationals 4 and 5,Humanities & Arts
+Classics,Scottish Highers,Humanities & Arts
+Design and Technology,GCSE (15-16 years),Humanities & Arts
+Design and Technology,A-Level,Humanities & Arts
+Design and Technology,International Baccalaureate,Humanities & Arts
+Design and Technology,Degree (or higher),Humanities & Arts
+Design and Technology,Nationals 4 and 5,Humanities & Arts
+Design and Technology,Scottish Highers,Humanities & Arts
+Drama,Primary (up to 11 years),Humanities & Arts
+Drama,GCSE (15-16 years),Humanities & Arts
+Drama,A-Level,Humanities & Arts
+Drama,International Baccalaureate,Humanities & Arts
+Drama,Degree (or higher),Humanities & Arts
+Drama,Nationals 4 and 5,Humanities & Arts
+Drama,Scottish Highers,Humanities & Arts
+Economics,GCSE (15-16 years),Humanities & Arts
+Economics,A-Level,Humanities & Arts
+Economics,International Baccalaureate,Humanities & Arts
+Economics,Degree (or higher),Humanities & Arts
+Economics,Nationals 4 and 5,Humanities & Arts
+Economics,Scottish Highers,Humanities & Arts
+Electronics,GCSE (15-16 years),Humanities & Arts
+Electronics,A-Level,Humanities & Arts
+Electronics,International Baccalaureate,Humanities & Arts
+Electronics,Degree (or higher),Humanities & Arts
+Electronics,Nationals 4 and 5,Humanities & Arts
+Electronics,Scottish Highers,Humanities & Arts
+Film Studies,GCSE (15-16 years),Humanities & Arts
+Film Studies,A-Level,Humanities & Arts
+Film Studies,International Baccalaureate,Humanities & Arts
+Film Studies,Degree (or higher),Humanities & Arts
+Film Studies,Nationals 4 and 5,Humanities & Arts
+Film Studies,Scottish Highers,Humanities & Arts
+Food Technology,Primary (up to 11 years),Humanities & Arts
+Food Technology,GCSE (15-16 years),Humanities & Arts
+Food Technology,A-Level,Humanities & Arts
+Food Technology,International Baccalaureate,Humanities & Arts
+Food Technology,Degree (or higher),Humanities & Arts
+Food Technology,Nationals 4 and 5,Humanities & Arts
+Food Technology,Scottish Highers,Humanities & Arts
+Geography,Primary (up to 11 years),Humanities & Arts
+Geography,GCSE (15-16 years),Humanities & Arts
+Geography,A-Level,Humanities & Arts
+Geography,International Baccalaureate,Humanities & Arts
+Geography,Degree (or higher),Humanities & Arts
+Geography,Nationals 4 and 5,Humanities & Arts
+Geography,Scottish Highers,Humanities & Arts
+Graphic Design,Primary (up to 11 years),Humanities & Arts
+Graphic Design,GCSE (15-16 years),Humanities & Arts
+Graphic Design,A-Level,Humanities & Arts
+Graphic Design,International Baccalaureate,Humanities & Arts
+Graphic Design,Degree (or higher),Humanities & Arts
+Graphic Design,Nationals 4 and 5,Humanities & Arts
+Graphic Design,Scottish Highers,Humanities & Arts
+History,Primary (up to 11 years),Humanities & Arts
+History,GCSE (15-16 years),Humanities & Arts
+History,A-Level,Humanities & Arts
+History,International Baccalaureate,Humanities & Arts
+History,Degree (or higher),Humanities & Arts
+History,Nationals 4 and 5,Humanities & Arts
+History,Scottish Highers,Humanities & Arts
+History of Art,GCSE (15-16 years),Humanities & Arts
+History of Art,A-Level,Humanities & Arts
+History of Art,International Baccalaureate,Humanities & Arts
+History of Art,Degree (or higher),Humanities & Arts
+History of Art,Nationals 4 and 5,Humanities & Arts
+History of Art,Scottish Highers,Humanities & Arts
+Humanities,Primary (up to 11 years),Humanities & Arts
+Humanities,GCSE (15-16 years),Humanities & Arts
+Humanities,A-Level,Humanities & Arts
+Humanities,International Baccalaureate,Humanities & Arts
+Humanities,Degree (or higher),Humanities & Arts
+Humanities,Nationals 4 and 5,Humanities & Arts
+Humanities,Scottish Highers,Humanities & Arts
+Manufacturing,GCSE (15-16 years),Humanities & Arts
+Manufacturing,A-Level,Humanities & Arts
+Manufacturing,International Baccalaureate,Humanities & Arts
+Manufacturing,Degree (or higher),Humanities & Arts
+Manufacturing,Nationals 4 and 5,Humanities & Arts
+Manufacturing,Scottish Highers,Humanities & Arts
+Performing Arts,Primary (up to 11 years),Humanities & Arts
+Performing Arts,GCSE (15-16 years),Humanities & Arts
+Performing Arts,A-Level,Humanities & Arts
+Performing Arts,International Baccalaureate,Humanities & Arts
+Performing Arts,Degree (or higher),Humanities & Arts
+Performing Arts,Nationals 4 and 5,Humanities & Arts
+Performing Arts,Scottish Highers,Humanities & Arts
+Philosophy,A-Level,Humanities & Arts
+Philosophy,Degree (or higher),Humanities & Arts
+Philosophy,Scottish Highers,Humanities & Arts
+Photography,GCSE (15-16 years),Humanities & Arts
+Photography,A-Level,Humanities & Arts
+Photography,International Baccalaureate,Humanities & Arts
+Photography,Degree (or higher),Humanities & Arts
+Photography,Nationals 4 and 5,Humanities & Arts
+Photography,Scottish Highers,Humanities & Arts
+Politics,GCSE (15-16 years),Humanities & Arts
+Politics,A-Level,Humanities & Arts
+Politics,Degree (or higher),Humanities & Arts
+Politics,Nationals 4 and 5,Humanities & Arts
+Politics,Scottish Highers,Humanities & Arts
+Psychology,GCSE (15-16 years),Humanities & Arts
+Psychology,A-Level,Humanities & Arts
+Psychology,International Baccalaureate,Humanities & Arts
+Psychology,Degree (or higher),Humanities & Arts
+Psychology,Nationals 4 and 5,Humanities & Arts
+Psychology,Scottish Highers,Humanities & Arts
+Religious Education,Primary (up to 11 years),Humanities & Arts
+Religious Education,GCSE (15-16 years),Humanities & Arts
+Religious Education,A-Level,Humanities & Arts
+Religious Education,International Baccalaureate,Humanities & Arts
+Religious Education,Degree (or higher),Humanities & Arts
+Religious Education,Nationals 4 and 5,Humanities & Arts
+Religious Education,Scottish Highers,Humanities & Arts
+Sociology,GCSE (15-16 years),Humanities & Arts
+Sociology,A-Level,Humanities & Arts
+Sociology,International Baccalaureate,Humanities & Arts
+Sociology,Degree (or higher),Humanities & Arts
+Sociology,Nationals 4 and 5,Humanities & Arts
+Sociology,Scottish Highers,Humanities & Arts
+Accounting,GCSE (15-16 years),Business and Professional Studies
+Accounting,A-Level,Business and Professional Studies
+Accounting,International Baccalaureate,Business and Professional Studies
+Accounting,Degree (or higher),Business and Professional Studies
+Accounting,Nationals 4 and 5,Business and Professional Studies
+Accounting,Scottish Highers,Business and Professional Studies
+Agriculture,GCSE (15-16 years),Business and Professional Studies
+Agriculture,A-Level,Business and Professional Studies
+Agriculture,International Baccalaureate,Business and Professional Studies
+Agriculture,Degree (or higher),Business and Professional Studies
+Agriculture,Nationals 4 and 5,Business and Professional Studies
+Agriculture,Scottish Highers,Business and Professional Studies
+Business Studies,GCSE (15-16 years),Business and Professional Studies
+Business Studies,A-Level,Business and Professional Studies
+Business Studies,International Baccalaureate,Business and Professional Studies
+Business Studies,Degree (or higher),Business and Professional Studies
+Business Studies,Nationals 4 and 5,Business and Professional Studies
+Business Studies,Scottish Highers,Business and Professional Studies
+Construction,A-Level,Business and Professional Studies
+Construction,Degree (or higher),Business and Professional Studies
+Construction,Scottish Highers,Business and Professional Studies
+Dentistry,Degree (or higher),Business and Professional Studies
+Engineering,GCSE (15-16 years),Business and Professional Studies
+Engineering,A-Level,Business and Professional Studies
+Engineering,International Baccalaureate,Business and Professional Studies
+Engineering,Degree (or higher),Business and Professional Studies
+Engineering,Nationals 4 and 5,Business and Professional Studies
+Engineering,Scottish Highers,Business and Professional Studies
+General Studies,A-Level,Business and Professional Studies
+General Studies,Degree (or higher),Business and Professional Studies
+General Studies,Scottish Highers,Business and Professional Studies
+Health and Social Care,GCSE (15-16 years),Business and Professional Studies
+Health and Social Care,A-Level,Business and Professional Studies
+Health and Social Care,International Baccalaureate,Business and Professional Studies
+Health and Social Care,Degree (or higher),Business and Professional Studies
+Health and Social Care,Nationals 4 and 5,Business and Professional Studies
+Health and Social Care,Scottish Highers,Business and Professional Studies
+Hospitality,GCSE (15-16 years),Business and Professional Studies
+Hospitality,A-Level,Business and Professional Studies
+Hospitality,International Baccalaureate,Business and Professional Studies
+Hospitality,Degree (or higher),Business and Professional Studies
+Hospitality,Nationals 4 and 5,Business and Professional Studies
+Hospitality,Scottish Highers,Business and Professional Studies
+Journalism,GCSE (15-16 years),Business and Professional Studies
+Journalism,A-Level,Business and Professional Studies
+Journalism,International Baccalaureate,Business and Professional Studies
+Journalism,Degree (or higher),Business and Professional Studies
+Journalism,Nationals 4 and 5,Business and Professional Studies
+Journalism,Scottish Highers,Business and Professional Studies
+Law,GCSE (15-16 years),Business and Professional Studies
+Law,A-Level,Business and Professional Studies
+Law,International Baccalaureate,Business and Professional Studies
+Law,Degree (or higher),Business and Professional Studies
+Law,Nationals 4 and 5,Business and Professional Studies
+Law,Scottish Highers,Business and Professional Studies
+Leisure Studies,A-Level,Business and Professional Studies
+Leisure Studies,Degree (or higher),Business and Professional Studies
+Leisure Studies,Scottish Highers,Business and Professional Studies
+Leisure and Tourism,GCSE (15-16 years),Business and Professional Studies
+Leisure and Tourism,A-Level,Business and Professional Studies
+Leisure and Tourism,International Baccalaureate,Business and Professional Studies
+Leisure and Tourism,Degree (or higher),Business and Professional Studies
+Leisure and Tourism,Nationals 4 and 5,Business and Professional Studies
+Leisure and Tourism,Scottish Highers,Business and Professional Studies
+Media Studies,GCSE (15-16 years),Business and Professional Studies
+Media Studies,A-Level,Business and Professional Studies
+Media Studies,International Baccalaureate,Business and Professional Studies
+Media Studies,Degree (or higher),Business and Professional Studies
+Media Studies,Nationals 4 and 5,Business and Professional Studies
+Media Studies,Scottish Highers,Business and Professional Studies
+Medicine,A-Level,Business and Professional Studies
+Medicine,Degree (or higher),Business and Professional Studies
+Medicine,Scottish Highers,Business and Professional Studies
+Neuroscience,A-Level,Business and Professional Studies
+Neuroscience,Degree (or higher),Business and Professional Studies
+Neuroscience,Scottish Highers,Business and Professional Studies
+Nursing,A-Level,Business and Professional Studies
+Nursing,Degree (or higher),Business and Professional Studies
+Nursing,Scottish Highers,Business and Professional Studies
+Travel and Tourism,GCSE (15-16 years),Business and Professional Studies
+Travel and Tourism,A-Level,Business and Professional Studies
+Travel and Tourism,International Baccalaureate,Business and Professional Studies
+Travel and Tourism,Degree (or higher),Business and Professional Studies
+Travel and Tourism,Nationals 4 and 5,Business and Professional Studies
+Travel and Tourism,Scottish Highers,Business and Professional Studies
+Computing,Primary (up to 11 years),Computing
+Computing,GCSE (15-16 years),Computing
+Computing,A-Level,Computing
+Computing,International Baccalaureate,Computing
+Computing,Degree (or higher),Computing
+Computing,Nationals 4 and 5,Computing
+Computing,Scottish Highers,Computing
+ICT,Primary (up to 11 years),Computing
+ICT,GCSE (15-16 years),Computing
+ICT,A-Level,Computing
+ICT,International Baccalaureate,Computing
+ICT,Degree (or higher),Computing
+ICT,Nationals 4 and 5,Computing
+ICT,Scottish Highers,Computing
+Programming,Primary (up to 11 years),Computing
+Programming,GCSE (15-16 years),Computing
+Programming,A-Level,Computing
+Programming,International Baccalaureate,Computing
+Programming,Degree (or higher),Computing
+Programming,Nationals 4 and 5,Computing
+Programming,Scottish Highers,Computing
+Afrikaans,Primary (up to 11 years),
+Afrikaans,GCSE (15-16 years),
+Afrikaans,A-Level,
+Afrikaans,International Baccalaureate,
+Afrikaans,Nationals 4 and 5,
+Afrikaans,Scottish Highers,
+Bengali,Primary (up to 11 years),
+Bengali,GCSE (15-16 years),
+Bengali,A-Level,
+Bengali,International Baccalaureate,
+Bengali,Nationals 4 and 5,
+Bengali,Scottish Highers,
+Catalan,Primary (up to 11 years),
+Catalan,GCSE (15-16 years),
+Catalan,A-Level,
+Catalan,International Baccalaureate,
+Catalan,Nationals 4 and 5,
+Catalan,Scottish Highers,
+Child Development,Primary (up to 11 years),
+Child Development,GCSE (15-16 years),
+Child Development,A-Level,
+Child Development,International Baccalaureate,
+Child Development,Degree (or higher),
+Child Development,Nationals 4 and 5,
+Child Development,Scottish Highers,
+Criminology,A-Level,
+Criminology,Degree (or higher),
+Criminology,Scottish Highers,
+Finance,A-Level,
+Finance,Degree (or higher),
+Finance,Scottish Highers,
+Food and Nutrition,Primary (up to 11 years),
+Food and Nutrition,GCSE (15-16 years),
+Food and Nutrition,A-Level,
+Food and Nutrition,International Baccalaureate,
+Food and Nutrition,Degree (or higher),
+Food and Nutrition,Nationals 4 and 5,
+Food and Nutrition,Scottish Highers,
+Gender and Sexuality Studies,Primary (up to 11 years),
+Gender and Sexuality Studies,GCSE (15-16 years),
+Gender and Sexuality Studies,A-Level,
+Gender and Sexuality Studies,International Baccalaureate,
+Gender and Sexuality Studies,Degree (or higher),
+Gender and Sexuality Studies,Nationals 4 and 5,
+Gender and Sexuality Studies,Scottish Highers,
+Home Economics,Primary (up to 11 years),
+Home Economics,GCSE (15-16 years),
+Home Economics,A-Level,
+Home Economics,International Baccalaureate,
+Home Economics,Degree (or higher),
+Home Economics,Nationals 4 and 5,
+Home Economics,Scottish Highers,
+Marketing,A-Level,
+Marketing,Degree (or higher),
+Marketing,Scottish Highers,
+Resistant Materials,Primary (up to 11 years),
+Resistant Materials,GCSE (15-16 years),
+Resistant Materials,A-Level,
+Resistant Materials,International Baccalaureate,
+Resistant Materials,Degree (or higher),
+Resistant Materials,Nationals 4 and 5,
+Resistant Materials,Scottish Highers,
+Social Work,A-Level,
+Social Work,Degree (or higher),
+Social Work,Scottish Highers,
+"Spelling, Punctuation and Grammar",Primary (up to 11 years),
+Systems and Control,Primary (up to 11 years),
+Systems and Control,GCSE (15-16 years),
+Systems and Control,A-Level,
+Systems and Control,International Baccalaureate,
+Systems and Control,Degree (or higher),
+Systems and Control,Nationals 4 and 5,
+Systems and Control,Scottish Highers,
+Textiles,Primary (up to 11 years),
+Textiles,GCSE (15-16 years),
+Textiles,A-Level,
+Textiles,International Baccalaureate,
+Textiles,Degree (or higher),
+Textiles,Nationals 4 and 5,
+Textiles,Scottish Highers,

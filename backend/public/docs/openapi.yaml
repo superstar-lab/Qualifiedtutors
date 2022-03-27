@@ -1,0 +1,144 @@
+openapi: 3.0.3
+info:
+  title: 'Qualified Tutors API Documentation'
+  description: 'REST API for access to and minipulation of the Qualified Tutors data model.'
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+paths:
+  /sanctum/csrf-cookie:
+    get:
+      summary: 'Return an empty response simply to trigger the storage of the CSRF cookie in the browser.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        204:
+          description: ''
+      tags:
+        - Endpoints
+  /register/client:
+    post:
+      summary: 'Register a new Client type user (student/parent)'
+      description: "Registers a new student for use with the site.\n<aside class=\"notice\">Once registered they will still need to login.</aside>"
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'User Management'
+      security: []
+  /me:
+    get:
+      summary: Me
+      description: 'Returns information about the currently authenticated user'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'User Management'
+  /login:
+    post:
+      summary: Login
+      description: "Logs user into the application.\nSuccessful responses will contain a session cookie that must be presented with future requests."
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'User Management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: laurie41@example.com
+                password:
+                  type: string
+                  description: ''
+                  example: voluptatum
+              required:
+                - email
+                - password
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
+  -
+    name: 'User Management'
+    description: "\nEndpoints for registering the various types of user."
+components:
+  securitySchemes:
+    default: []
+security:
+  -
+    default: []

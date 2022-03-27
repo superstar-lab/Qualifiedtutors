@@ -1,0 +1,455 @@
+subject,level,category
+Arabic,Beginner,Languages
+Arabic,Intermediate,Languages
+Arabic,Advanced,Languages
+Bulgarian,Beginner,Languages
+Bulgarian,Intermediate,Languages
+Bulgarian,Advanced,Languages
+Cantonese,Beginner,Languages
+Cantonese,Intermediate,Languages
+Cantonese,Advanced,Languages
+Croatian,Beginner,Languages
+Croatian,Intermediate,Languages
+Croatian,Advanced,Languages
+Czech,Beginner,Languages
+Czech,Intermediate,Languages
+Czech,Advanced,Languages
+Danish,Beginner,Languages
+Danish,Intermediate,Languages
+Danish,Advanced,Languages
+Dutch,Beginner,Languages
+Dutch,Intermediate,Languages
+Dutch,Advanced,Languages
+English as a Foreign Language EFL,Beginner,Languages
+English as a Foreign Language EFL,Intermediate,Languages
+English as a Foreign Language EFL,Advanced,Languages
+Estonian,Beginner,Languages
+Estonian,Intermediate,Languages
+Estonian,Advanced,Languages
+Farsi,Beginner,Languages
+Farsi,Intermediate,Languages
+Farsi,Advanced,Languages
+Finnish,Beginner,Languages
+Finnish,Intermediate,Languages
+Finnish,Advanced,Languages
+French,Beginner,Languages
+French,Intermediate,Languages
+French,Advanced,Languages
+Gaelic,Beginner,Languages
+Gaelic,Intermediate,Languages
+Gaelic,Advanced,Languages
+German,Beginner,Languages
+German,Intermediate,Languages
+German,Advanced,Languages
+Greek Classical,Beginner,Languages
+Greek Classical,Intermediate,Languages
+Greek Classical,Advanced,Languages
+Greek Modern,Beginner,Languages
+Greek Modern,Intermediate,Languages
+Greek Modern,Advanced,Languages
+Gujarati,Beginner,Languages
+Gujarati,Intermediate,Languages
+Gujarati,Advanced,Languages
+Hebrew,Beginner,Languages
+Hebrew,Intermediate,Languages
+Hebrew,Advanced,Languages
+Hindi,Beginner,Languages
+Hindi,Intermediate,Languages
+Hindi,Advanced,Languages
+Hungarian,Beginner,Languages
+Hungarian,Intermediate,Languages
+Hungarian,Advanced,Languages
+IELTS and ESOL,Beginner,Languages
+IELTS and ESOL,Intermediate,Languages
+IELTS and ESOL,Advanced,Languages
+Irish,Beginner,Languages
+Irish,Intermediate,Languages
+Irish,Advanced,Languages
+Italian,Beginner,Languages
+Italian,Intermediate,Languages
+Italian,Advanced,Languages
+Japanese,Beginner,Languages
+Japanese,Intermediate,Languages
+Japanese,Advanced,Languages
+Kashmiri,Beginner,Languages
+Kashmiri,Intermediate,Languages
+Kashmiri,Advanced,Languages
+Korean,Beginner,Languages
+Korean,Intermediate,Languages
+Korean,Advanced,Languages
+Languages,Beginner,Languages
+Languages,Intermediate,Languages
+Languages,Advanced,Languages
+Latin,Beginner,Languages
+Latin,Intermediate,Languages
+Latin,Advanced,Languages
+Lithuanian,Beginner,Languages
+Lithuanian,Intermediate,Languages
+Lithuanian,Advanced,Languages
+Malay,Beginner,Languages
+Malay,Intermediate,Languages
+Malay,Advanced,Languages
+Mandarin,Beginner,Languages
+Mandarin,Intermediate,Languages
+Mandarin,Advanced,Languages
+Norwegian,Beginner,Languages
+Norwegian,Intermediate,Languages
+Norwegian,Advanced,Languages
+Persian,Beginner,Languages
+Persian,Intermediate,Languages
+Persian,Advanced,Languages
+Polish,Beginner,Languages
+Polish,Intermediate,Languages
+Polish,Advanced,Languages
+Portuguese,Beginner,Languages
+Portuguese,Intermediate,Languages
+Portuguese,Advanced,Languages
+Punjabi,Beginner,Languages
+Punjabi,Intermediate,Languages
+Punjabi,Advanced,Languages
+Romanian,Beginner,Languages
+Romanian,Intermediate,Languages
+Romanian,Advanced,Languages
+Russian,Beginner,Languages
+Russian,Intermediate,Languages
+Russian,Advanced,Languages
+Serbian,Beginner,Languages
+Serbian,Intermediate,Languages
+Serbian,Advanced,Languages
+Sign Language,Beginner,Languages
+Sign Language,Intermediate,Languages
+Sign Language,Advanced,Languages
+Slovak,Beginner,Languages
+Slovak,Intermediate,Languages
+Slovak,Advanced,Languages
+Spanish,Beginner,Languages
+Spanish,Intermediate,Languages
+Spanish,Advanced,Languages
+Swedish,Beginner,Languages
+Swedish,Intermediate,Languages
+Swedish,Advanced,Languages
+Tamil,Beginner,Languages
+Tamil,Intermediate,Languages
+Tamil,Advanced,Languages
+Telugu,Beginner,Languages
+Telugu,Intermediate,Languages
+Telugu,Advanced,Languages
+Thai,Beginner,Languages
+Thai,Intermediate,Languages
+Thai,Advanced,Languages
+Turkish,Beginner,Languages
+Turkish,Intermediate,Languages
+Turkish,Advanced,Languages
+Ukrainian,Beginner,Languages
+Ukrainian,Intermediate,Languages
+Ukrainian,Advanced,Languages
+Urdu,Beginner,Languages
+Urdu,Intermediate,Languages
+Urdu,Advanced,Languages
+Vietnamese,Beginner,Languages
+Vietnamese,Intermediate,Languages
+Vietnamese,Advanced,Languages
+Welsh,Beginner,Languages
+Welsh,Intermediate,Languages
+Welsh,Advanced,Languages
+Bagpipes,Beginner,Music
+Bagpipes,Intermediate,Music
+Bagpipes,Advanced,Music
+Bagpipes,Grade 1-3,Music
+Bagpipes,Grade 4-5,Music
+Bagpipes,Grade 6-7,Music
+Bagpipes,Grade 8+,Music
+Banjo,Beginner,Music
+Banjo,Intermediate,Music
+Banjo,Advanced,Music
+Banjo,Grade 1-3,Music
+Banjo,Grade 4-5,Music
+Banjo,Grade 6-7,Music
+Banjo,Grade 8+,Music
+Bass Guitar,Beginner,Music
+Bass Guitar,Intermediate,Music
+Bass Guitar,Advanced,Music
+Bass Guitar,Grade 1-3,Music
+Bass Guitar,Grade 4-5,Music
+Bass Guitar,Grade 6-7,Music
+Bass Guitar,Grade 8+,Music
+Bassoon,Beginner,Music
+Bassoon,Intermediate,Music
+Bassoon,Advanced,Music
+Bassoon,Grade 1-3,Music
+Bassoon,Grade 4-5,Music
+Bassoon,Grade 6-7,Music
+Bassoon,Grade 8+,Music
+Cello,Beginner,Music
+Cello,Intermediate,Music
+Cello,Advanced,Music
+Cello,Grade 1-3,Music
+Cello,Grade 4-5,Music
+Cello,Grade 6-7,Music
+Cello,Grade 8+,Music
+Clarinet,Beginner,Music
+Clarinet,Intermediate,Music
+Clarinet,Advanced,Music
+Clarinet,Grade 4-5,Music
+Clarinet,Grade 6-7,Music
+Clarinet,Grade 1-3,Music
+Clarinet,Grade 8+,Music
+Composition,Beginner,Music
+Composition,Intermediate,Music
+Composition,Advanced,Music
+Composition,Grade 1-3,Music
+Composition,Grade 4-5,Music
+Composition,Grade 6-7,Music
+Composition,Grade 8+,Music
+Conducting,Beginner,Music
+Conducting,Intermediate,Music
+Conducting,Advanced,Music
+Conducting,Grade 1-3,Music
+Conducting,Grade 4-5,Music
+Conducting,Grade 6-7,Music
+Conducting,Grade 8+,Music
+Cornet,Beginner,Music
+Cornet,Intermediate,Music
+Cornet,Advanced,Music
+Cornet,Grade 1-3,Music
+Cornet,Grade 4-5,Music
+Cornet,Grade 6-7,Music
+Cornet,Grade 8+,Music
+Double Bass,Beginner,Music
+Double Bass,Intermediate,Music
+Double Bass,Advanced,Music
+Double Bass,Grade 1-3,Music
+Double Bass,Grade 4-5,Music
+Double Bass,Grade 6-7,Music
+Double Bass,Grade 8+,Music
+Drums,Beginner,Music
+Drums,Intermediate,Music
+Drums,Advanced,Music
+Drums,Grade 1-3,Music
+Drums,Grade 4-5,Music
+Drums,Grade 6-7,Music
+Drums,Grade 8+,Music
+Euphonium,Beginner,Music
+Euphonium,Intermediate,Music
+Euphonium,Advanced,Music
+Euphonium,Grade 1-3,Music
+Euphonium,Grade 4-5,Music
+Euphonium,Grade 6-7,Music
+Euphonium,Grade 8+,Music
+Flugel Horn,Beginner,Music
+Flugel Horn,Intermediate,Music
+Flugel Horn,Advanced,Music
+Flugel Horn,Grade 1-3,Music
+Flugel Horn,Grade 4-5,Music
+Flugel Horn,Grade 6-7,Music
+Flugel Horn,Grade 8+,Music
+French Horn,Beginner,Music
+French Horn,Intermediate,Music
+French Horn,Advanced,Music
+French Horn,Grade 1-3,Music
+French Horn,Grade 4-5,Music
+French Horn,Grade 6-7,Music
+French Horn,Grade 8+,Music
+Guitar,Beginner,Music
+Guitar,Intermediate,Music
+Guitar,Advanced,Music
+Guitar,Acoustic,Music
+Guitar,Electric,Music
+Guitar,Blues,Music
+Guitar,Rock,Music
+Guitar,Grade 1-3,Music
+Guitar,Grade 4-5,Music
+Guitar,Grade 6-7,Music
+Guitar,Grade 8+,Music
+Harmonica,Beginner,Music
+Harmonica,Intermediate,Music
+Harmonica,Advanced,Music
+Harmonica,Grade 1-3,Music
+Harmonica,Grade 4-5,Music
+Harmonica,Grade 6-7,Music
+Harmonica,Grade 8+,Music
+Harp,Beginner,Music
+Harp,Intermediate,Music
+Harp,Advanced,Music
+Harp,Grade 1-3,Music
+Harp,Grade 4-5,Music
+Harp,Grade 6-7,Music
+Harp,Grade 8+,Music
+Harpsichord,Beginner,Music
+Harpsichord,Intermediate,Music
+Harpsichord,Advanced,Music
+Harpsichord,Grade 1-3,Music
+Harpsichord,Grade 4-5,Music
+Harpsichord,Grade 6-7,Music
+Harpsichord,Grade 8+,Music
+Keyboard,Beginner,Music
+Keyboard,Intermediate,Music
+Keyboard,Advanced,Music
+Keyboard,Grade 1-3,Music
+Keyboard,Grade 4-5,Music
+Keyboard,Grade 6-7,Music
+Keyboard,Grade 8+,Music
+Mandolin,Beginner,Music
+Mandolin,Intermediate,Music
+Mandolin,Advanced,Music
+Mandolin,Grade 1-3,Music
+Mandolin,Grade 4-5,Music
+Mandolin,Grade 6-7,Music
+Mandolin,Grade 8+,Music
+Music,Grade 1-3,Music
+Music,Grade 4-5,Music
+Music,Grade 6-7,Music
+Music,Grade 8+,Music
+Music Technology,Beginner,Music
+Music Technology,Intermediate,Music
+Music Technology,Advanced,Music
+Music Technology,Grade 1-3,Music
+Music Technology,Grade 4-5,Music
+Music Technology,Grade 6-7,Music
+Music Technology,Grade 8+,Music
+Music Theory,Beginner,Music
+Music Theory,Intermediate,Music
+Music Theory,Advanced,Music
+Music Theory,Grade 1-3,Music
+Music Theory,Grade 4-5,Music
+Music Theory,Grade 6-7,Music
+Music Theory,Grade 8+,Music
+Oboe,Beginner,Music
+Oboe,Intermediate,Music
+Oboe,Advanced,Music
+Oboe,Grade 1-3,Music
+Oboe,Grade 4-5,Music
+Oboe,Grade 6-7,Music
+Oboe,Grade 8+,Music
+Organ,Beginner,Music
+Organ,Intermediate,Music
+Organ,Advanced,Music
+Organ,Grade 1-3,Music
+Organ,Grade 4-5,Music
+Organ,Grade 6-7,Music
+Organ,Grade 8+,Music
+Percussion,Beginner,Music
+Percussion,Intermediate,Music
+Percussion,Advanced,Music
+Percussion,Grade 1-3,Music
+Percussion,Grade 4-5,Music
+Percussion,Grade 6-7,Music
+Percussion,Grade 8+,Music
+Piano,Beginner,Music
+Piano,Intermediate,Music
+Piano,Advanced,Music
+Piano,Grade 1-3,Music
+Piano,Grade 4-5,Music
+Piano,Grade 6-7,Music
+Piano,Grade 8+,Music
+Piccolo,Beginner,Music
+Piccolo,Intermediate,Music
+Piccolo,Advanced,Music
+Piccolo,Grade 1-3,Music
+Piccolo,Grade 4-5,Music
+Piccolo,Grade 6-7,Music
+Piccolo,Grade 8+,Music
+Recorder,Beginner,Music
+Recorder,Intermediate,Music
+Recorder,Advanced,Music
+Recorder,Grade 1-3,Music
+Recorder,Grade 4-5,Music
+Recorder,Grade 6-7,Music
+Recorder,Grade 8+,Music
+Saxophone,Beginner,Music
+Saxophone,Intermediate,Music
+Saxophone,Advanced,Music
+Saxophone,Grade 1-3,Music
+Saxophone,Grade 4-5,Music
+Saxophone,Grade 6-7,Music
+Saxophone,Grade 8+,Music
+Singing,Beginner,Music
+Singing,Intermediate,Music
+Singing,Advanced,Music
+Singing,Grade 1-3,Music
+Singing,Grade 4-5,Music
+Singing,Grade 6-7,Music
+Singing,Grade 8+,Music
+Sitar,Beginner,Music
+Sitar,Intermediate,Music
+Sitar,Advanced,Music
+Sitar,Grade 1-3,Music
+Sitar,Grade 4-5,Music
+Sitar,Grade 6-7,Music
+Sitar,Grade 8+,Music
+Tenor Horn,Beginner,Music
+Tenor Horn,Intermediate,Music
+Tenor Horn,Advanced,Music
+Tenor Horn,Grade 1-3,Music
+Tenor Horn,Grade 4-5,Music
+Tenor Horn,Grade 6-7,Music
+Tenor Horn,Grade 8+,Music
+Trombone,Beginner,Music
+Trombone,Intermediate,Music
+Trombone,Advanced,Music
+Trombone,Grade 1-3,Music
+Trombone,Grade 4-5,Music
+Trombone,Grade 6-7,Music
+Trombone,Grade 8+,Music
+Trumpet,Beginner,Music
+Trumpet,Intermediate,Music
+Trumpet,Advanced,Music
+Trumpet,Grade 1-3,Music
+Trumpet,Grade 4-5,Music
+Trumpet,Grade 6-7,Music
+Trumpet,Grade 8+,Music
+Tuba,Beginner,Music
+Tuba,Intermediate,Music
+Tuba,Advanced,Music
+Tuba,Grade 1-3,Music
+Tuba,Grade 4-5,Music
+Tuba,Grade 6-7,Music
+Tuba,Grade 8+,Music
+Ukulele,Beginner,Music
+Ukulele,Intermediate,Music
+Ukulele,Advanced,Music
+Ukulele,Grade 1-3,Music
+Ukulele,Grade 4-5,Music
+Ukulele,Grade 6-7,Music
+Ukulele,Grade 8+,Music
+Viola,Beginner,Music
+Viola,Intermediate,Music
+Viola,Advanced,Music
+Viola,Grade 1-3,Music
+Viola,Grade 4-5,Music
+Viola,Grade 6-7,Music
+Viola,Grade 8+,Music
+Violin,Beginner,Music
+Violin,Intermediate,Music
+Violin,Advanced,Music
+Violin,Grade 1-3,Music
+Violin,Grade 4-5,Music
+Violin,Grade 6-7,Music
+Violin,Grade 8+,Music
+Primary,Key Stage 1,Primary and Early Years
+Primary,Key Stage 2,Primary and Early Years
+"Design, Surveying and Planning for Construction",T-Level,Business and Professional Studies
+"Digital Production, Design and Development",T-Level,Business and Professional Studies
+Education and Childcare,T-Level,Business and Professional Studies
+Accordion,Beginner,
+Accordion,Intermediate,
+Accordion,Advanced,
+Accordion,Grade 1-3,
+Accordion,Grade 4-5,
+Accordion,Grade 6-7,
+Accordion,Grade 8+,
+Afrikaans,Beginner,
+Afrikaans,Intermediate,
+Afrikaans,Advanced,
+Bengali,Beginner,
+Bengali,Intermediate,
+Bengali,Advanced,
+Catalan,Beginner,
+Catalan,Intermediate,
+Catalan,Advanced,
+Functional Skills,Maths,
+Functional Skills,English,
+Functional Skills,Level 1,
+Functional Skills,Level 2,
+QTS,Numeracy/Maths Skills,
+QTS,Literacy Skills,

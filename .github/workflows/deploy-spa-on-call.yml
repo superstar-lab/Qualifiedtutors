@@ -1,0 +1,68 @@
+name: Deploy SPA to Environment
+
+on:
+  workflow_call:
+    inputs:
+      ENVIRONMENT:
+        type: string
+        required: true
+    secrets:
+      AWS_REGION:
+        required: true
+      S3_BUCKET:
+        required: true
+      CLOUDFRONT_DIST_ID:
+        required: true
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      REACT_APP_GOOGLE_RECAPTCHA_KEY:
+        required: true
+      REACT_APP_GOOGLE_MAPS_KEY:
+        required: true
+      REACT_APP_GOOGLE_ANALYTICS_ID:
+        required: true
+   
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup .env
+        run: cd frontend && rm -f .env && cp .env.${{ inputs.ENVIRONMENT }} .env
+
+      - name: Inject secrets
+        run: |
+          cd frontend
+          sed -i -e "s|\${REACT_APP_GOOGLE_RECAPTCHA_KEY}|${{ secrets.REACT_APP_GOOGLE_RECAPTCHA_KEY }}|" .env
+          sed -i -e "s|\${REACT_APP_GOOGLE_MAPS_KEY}|${{ secrets.REACT_APP_GOOGLE_MAPS_KEY }}|" .env
+          sed -i -e "s|\${REACT_APP_GOOGLE_ANALYTICS_ID}|${{ secrets.REACT_APP_GOOGLE_ANALYTICS_ID }}|" .env
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@13d241b293754004c80624b5567555c4a39ffbe3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Install
+        run: cd frontend && npm install
+
+      - name: Build
+        run: cd frontend && npm run build
+        env:
+          CI: ""
+
+      - name: Deploy to S3
+        uses: reggionick/s3-deploy@v3
+        with:
+            folder: frontend/build
+            bucket: ${{ secrets.S3_BUCKET }}
+            bucket-region: ${{ secrets.AWS_REGION }}
+            dist-id: ${{ secrets.CLOUDFRONT_DIST_ID }}

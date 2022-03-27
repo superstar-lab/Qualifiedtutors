@@ -1,0 +1,199 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "localhost"
+        }
+    ],
+    "info": {
+        "name": "Qualified Tutors API Documentation",
+        "_postman_id": "a0007c82-81e9-477f-8ddd-c60e19f153b3",
+        "description": "REST API for access to and minipulation of the Qualified Tutors data model.",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Return an empty response simply to trigger the storage of the CSRF cookie in the browser.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "sanctum\/csrf-cookie",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/sanctum\/csrf-cookie"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IjVTQTdac3dac0lyWGFIVWZPbFBVTXc9PSIsInZhbHVlIjoiVVlZeFM0eEt5MzNOZ3FEWG5HZ3dhQ1B1bGZiUlFLRlZTWkxrTHdkNWs4M3ZBWnJHWGNoMjdMMS84TTNBaElBME1VaG4vcCtCTzNMU2xwdm5kc0szeEdFTUdlRHl6eUd4S1FoSUpWOFZSVUt2aGxnc0NRdVY1MWhGbXRLbXZNeDMiLCJtYWMiOiJmMzE0YjYwZWI5Yzc5YTNjN2JmZWQ5YTc2MTFkNTYwNWI2ODlkZjkwODRhZWJkZGVkOGQxZGNkYmM4NzIzNDU2IiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; qualifiedtutorsapi_session=eyJpdiI6IkRLaFBuTGNyWStvdHZ6UWwreTJjQVE9PSIsInZhbHVlIjoibkU0VkhNL21MOFBpWTBiVStObEhBMGxrYWhrTnZUKzVwbzh6eEVTNExkWTBtLzZDKzgxMk9ZNnNMZDk2SGlvR0drKzNMbmNBdUN0K3R5VGh5WGVONXQ5N0ttQ1o2QklkM1VnN1djL0NJcnpxTTlpVk80eUR1YVA3NDArNSt0d0YiLCJtYWMiOiIzNTAwYjY0YjZiMzViMGIyMGJlMzU3N2QyMzRmMDliMDIwZjRiNWFlODZlNzU5OTViYmI0N2ZiOTc4NjEwM2QzIiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "User Management",
+            "description": "\nEndpoints for registering the various types of user.",
+            "item": [
+                {
+                    "name": "Register a new Client type user (student\/parent)",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "register\/client",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/register\/client"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Registers a new student for use with the site.\n<aside class=\"notice\">Once registered they will still need to login.<\/aside>",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Me",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "me",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Returns information about the currently authenticated user"
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "qualifiedtutorsapi_session=eyJpdiI6ImlPV1A2dGtuOGhvMUZsbUJ1dUpKamc9PSIsInZhbHVlIjoiYkxJTHZUK1JwQzNVQ0htZ1A1OE42ZVEwcWdva0c2STQ5OXhaSVlDWkVTMkRkcHY0ck5GZHJKRVE1c0luZlN0ek44bU43R1JEbGlXQnkrSVB0em1lVzF3c1g0c1VVaFNvZjY0eUtxQnkrUVhmQWI1TWR4aEYxejF6cFpwamptb0QiLCJtYWMiOiI5YTFmNjRjNDQzZjFlYTIxM2EzOGMwY2ZjZDY5ZTg2NTE3MGZjMTgxMTRkMzFhMDZiNzRiNmE2YWRjMWU3NDllIiwidGFnIjoiIn0%3D; expires=Sun, 02-Jan-2022 12:10:46 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Login",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "login",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"laurie41@example.com\",\"password\":\"voluptatum\"}"
+                        },
+                        "description": "Logs user into the application.\nSuccessful responses will contain a session cookie that must be presented with future requests.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "apikey",
+        "apikey": [
+            {
+                "key": "in",
+                "value": "",
+                "type": "string"
+            },
+            {
+                "key": "key",
+                "value": "",
+                "type": "string"
+            }
+        ]
+    }
+}

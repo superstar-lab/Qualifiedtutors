@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e90ff" />
+
+    <!-- Default meta for the site, may be overridden by pages using <Helmet> -->
+    <title>Qualified Tutors</title>
+    <meta name="description" content="Qualified Tutors" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Qualified Tutors" />
+    <meta name="twitter:description" content="Qualified Tutors" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta name="og:title" content="Qualified Tutors" />
+    <meta name="og:description" content="Qualified Tutors" />
+    <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen:wght@300;400;700&display=swap" 
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+
+    <script async src="https://www.google.com/recaptcha/api.js?render=%REACT_APP_GOOGLE_RECAPTCHA_KEY%"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?libraries=places&key=%REACT_APP_GOOGLE_MAPS_KEY%"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GOOGLE_ANALYTICS_ID%"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '%REACT_APP_GOOGLE_ANALYTICS_ID%');
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

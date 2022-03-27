@@ -1,0 +1,39 @@
+name: Deploy API to Staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout:
+    name: Checkout
+    runs-on: ubuntu-latest
+    environment: staging
+
+    if: github.ref == 'refs/heads/staging'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+  deploy:
+    if: github.ref == 'refs/heads/staging'
+
+    uses: ./.github/workflows/deploy-api-on-call.yml
+    with:
+      ENVIRONMENT: staging
+    secrets:
+      AWS_REGION: ${{ secrets.STAGING_AWS_REGION }}
+      EBS_APP_NAME: ${{ secrets.STAGING_EBS_APP_NAME }}
+      EBS_ENV_NAME: ${{ secrets.STAGING_EBS_ENV_NAME }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+      APP_KEY: ${{ secrets.STAGING_APP_KEY }}
+      RDS_HOST: ${{ secrets.STAGING_RDS_HOST }}
+      RDS_PSWD: ${{ secrets.STAGING_RDS_PSWD }}
+      S3_PUBLIC_BUCKET: ${{ secrets.STAGING_S3_PUBLIC_BUCKET }}
+      S3_PUBLIC_BUCKET_URL: ${{ secrets.STAGING_S3_PUBLIC_BUCKET_URL }}
+      S3_PRIVATE_BUCKET: ${{ secrets.STAGING_S3_PRIVATE_BUCKET }}
+      S3_PRIVATE_BUCKET_URL: ${{ secrets.STAGING_S3_PRIVATE_BUCKET_URL }}
+      SENDGRID_API_KEY: ${{ secrets.STAGING_SENDGRID_API_KEY }}
+      GOOGLE_API_KEY: ${{ secrets.STAGING_GOOGLE_API_KEY }}
+      GOOGLE_RECAPTCHA_SECRET_KEY: ${{ secrets.STAGING_GOOGLE_RECAPTCHA_SECRET_KEY }}

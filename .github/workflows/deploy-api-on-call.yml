@@ -1,0 +1,96 @@
+name: Deploy API to Environment
+
+on:
+  workflow_call:
+    inputs:
+      ENVIRONMENT:
+        type: string
+        required: true
+    secrets:
+      EBS_APP_NAME:
+        required: true
+      EBS_ENV_NAME:
+        required: true
+      AWS_REGION:
+        required: true
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      APP_KEY:
+        required: true
+      RDS_HOST:
+        required: true
+      RDS_PSWD:
+        required: true
+      S3_PUBLIC_BUCKET:
+        required: true
+      S3_PUBLIC_BUCKET_URL:
+        required: true
+      S3_PRIVATE_BUCKET:
+        required: true
+      S3_PRIVATE_BUCKET_URL:
+        required: true
+      SENDGRID_API_KEY:
+        required: true
+      GOOGLE_API_KEY:
+        required: true
+      GOOGLE_RECAPTCHA_SECRET_KEY:
+        required: true
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y_%H-%M-%S-%3N')"
+
+      - name: Setup env
+        run: cd backend && rm -f .env && cp .env.${{ inputs.ENVIRONMENT }} .env
+
+      - name: Inject secrets
+        run: |
+          cd backend
+          sed -i -e "s|\${APP_KEY}|${{ secrets.APP_KEY }}|" .env
+          sed -i -e "s|\${RDS_HOST}|${{ secrets.RDS_HOST }}|" .env
+          sed -i -e "s|\${RDS_PSWD}|${{ secrets.RDS_PSWD }}|" .env
+          sed -i -e "s|\${S3_PUBLIC_BUCKET}|${{ secrets.S3_PUBLIC_BUCKET }}|" .env
+          sed -i -e "s|\${S3_PUBLIC_BUCKET}|${{ secrets.S3_PUBLIC_BUCKET_URL }}|" .env
+          sed -i -e "s|\${S3_PRIVATE_BUCKET}|${{ secrets.S3_PRIVATE_BUCKET }}|" .env
+          sed -i -e "s|\${S3_PRIVATE_BUCKET}|${{ secrets.S3_PRIVATE_BUCKET_URL }}|" .env
+          sed -i -e "s|\${SENDGRID_API_KEY}|${{ secrets.SENDGRID_API_KEY }}|" .env
+          sed -i -e "s|\${GOOGLE_API_KEY}|${{ secrets.GOOGLE_API_KEY }}|" .env
+          sed -i -e "s|\${GOOGLE_RECAPTCHA_SECRET_KEY}|${{ secrets.GOOGLE_RECAPTCHA_SECRET_KEY }}|" .env
+
+      - name: Install
+        uses: php-actions/composer@v6
+        with:
+          args: --profile --ignore-platform-reqs --working-dir=backend
+
+      - name: Generate deployment package
+        run: cd backend && zip -r build.zip .* -x '*.git*'
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@13d241b293754004c80624b5567555c4a39ffbe3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ secrets.EBS_APP_NAME }}
+          environment_name: ${{ secrets.EBS_ENV_NAME }}
+          version_label: ${{ steps.date.outputs.date }}
+          region: ${{ secrets.AWS_REGION }}
+          deployment_package: backend/build.zip

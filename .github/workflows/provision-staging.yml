@@ -1,0 +1,58 @@
+name: Provision Staging Infrastructure
+
+on:
+  workflow_dispatch:
+
+jobs:
+  provision:
+    name: Provision
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: CDK Synth
+        uses: youyo/aws-cdk-github-actions@v2
+        with:
+          cdk_subcommand: 'synth'
+          cdk_stack: 'StagingStack'
+          cdk_args: '--require-approval never'
+          actions_comment: false
+          working_dir: 'iac'
+        env:
+          ENVIRONMENT: staging
+          AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.STAGING_AWS_REGION }}
+          QT_CF_ACM_CERT_ARN: ${{ secrets.STAGING_CF_ACM_CERT_ARN }}
+          QT_EBS_ACM_CERT_ARN: ${{ secrets.STAGING_EBS_ACM_CERT_ARN }}
+          BACKEND_SSH_KEY: ${{ secrets.STAGING_BACKEND_SSH_KEY }}
+          BASTION_SSH_KEY: ${{ secrets.STAGING_BASTION_SSH_KEY }}
+          DATABASE_NAME: qualifiedtutors
+          DATABASE_ROOT_USER: QualifiedTutorsDBAdmin
+          DATABASE_ROOT_PASSWORD: ${{ secrets.STAGING_DATABASE_ROOT_PASSWORD }}
+          FRONTEND_BUCKET_NAME: ${{ secrets.STAGING_FRONTEND_BUCKET_NAME }}
+
+      - name: CDK Deploy
+        uses: youyo/aws-cdk-github-actions@v2
+        with:
+          cdk_subcommand: 'deploy'
+          cdk_stack: 'StagingStack'
+          cdk_args: '--require-approval never'
+          actions_comment: false
+          working_dir: 'iac'
+        env:
+          ENVIRONMENT: staging
+          AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.STAGING_AWS_REGION }}
+          QT_CF_ACM_CERT_ARN: ${{ secrets.STAGING_CF_ACM_CERT_ARN }}
+          QT_EBS_ACM_CERT_ARN: ${{ secrets.STAGING_EBS_ACM_CERT_ARN }}
+          BACKEND_SSH_KEY: ${{ secrets.STAGING_BACKEND_SSH_KEY }}
+          BASTION_SSH_KEY: ${{ secrets.STAGING_BASTION_SSH_KEY }}
+          DATABASE_NAME: qualifiedtutors
+          DATABASE_ROOT_USER: QualifiedTutorsDBAdmin
+          DATABASE_ROOT_PASSWORD: ${{ secrets.STAGING_DATABASE_ROOT_PASSWORD }}
+          FRONTEND_BUCKET_NAME: ${{ secrets.STAGING_FRONTEND_BUCKET_NAME }}
