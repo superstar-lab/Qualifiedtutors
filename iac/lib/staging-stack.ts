@@ -119,7 +119,7 @@ export class StagingStack extends Stack {
     */
 
     // Create the production ElasticBeanstalk applications for the backend
-    const ebAppName = "Staging-QualifiedTutorsAPI"
+    const ebAppName = "Staging-QualifiedTeachersAPI"
     const ebApp = new elasticbeanstalk.CfnApplication(this, 'Application', {
         applicationName: ebAppName
     })
@@ -269,16 +269,16 @@ export class StagingStack extends Stack {
 
     // Create the beanstalk
     const elbEnv = new elasticbeanstalk.CfnEnvironment(this, 'Staging-Environment', {
-        environmentName: 'Staging-QualifiedTutors-API',
+        environmentName: 'Staging-QualifiedTeachers-API',
         applicationName: ebApp.applicationName || ebAppName,
-        solutionStackName: '64bit Amazon Linux 2 v3.3.9 running PHP 8.0',
+        solutionStackName: '64bit Amazon Linux 2 v3.3.12 running PHP 8.0',
         optionSettings: ebScalingOpts,
         //versionLabel: ebAppVersion.ref
     }) 
     // --------------------- End Elastic Beanstalk Configuration ---------------------------
    
     // --------------------------- Database Configuration ----------------------------------
-    const db = new rds.DatabaseInstance(this, 'Staging-QualifiedTutors-DB', {
+    const db = new rds.DatabaseInstance(this, 'Staging-QualifiedTeachers-DB', {
         engine: rds.DatabaseInstanceEngine.MYSQL,
         instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
         vpc: vpc,
@@ -325,12 +325,11 @@ export class StagingStack extends Stack {
             allowedOrigins: [
                 'http://localhost:3000',  // Dev env frontend
                 'http://localhost:45678', // React-snap, used to prerender routes on FE build
-                'http://qualifiedtutors.bypass.systems',
                 'https://staging.kesso.uk',
                 'https://www.kesso.uk',
                 'https://kesso.uk',
-                'https://staging.qualifiedtutors.co.uk',
-                'https://qualifiedtutors.co.uk'
+                'https://staging.qualifiedteachers.co.uk',
+                'https://qualifiedteachers.co.uk'
             ],
             allowedHeaders: ['*'],
         },],
@@ -360,7 +359,7 @@ export class StagingStack extends Stack {
                 sslSupportMethod: 'sni-only'
             },
             aliases: [
-                "staging-qualifiedtutors.bypass.systems"
+                "staging-qualifiedteachers.bypass.systems"
             ]
         }
     })

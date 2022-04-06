@@ -7,5 +7,10 @@
   "hosted-zone:account=959051253435:domainName=bypass.systems:region=ca-central-1": {
     "Id": "/hostedzone/Z09754491MV2B8SQT1KWE",
     "Name": "bypass.systems."
-  }
+  },
+  "availability-zones:account=393914188072:region=eu-west-2": [
+    "eu-west-2a",
+    "eu-west-2b",
+    "eu-west-2c"
+  ]
 }
