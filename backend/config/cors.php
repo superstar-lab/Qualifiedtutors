@@ -35,7 +35,10 @@ return [
         'https://qualifiedtutors.bypass.systems',
 
         // production env
-        'https://qualifiedtutors.co.uk'
+        'https://qualifiedtutors.co.uk',
+
+        'https://kesso.uk',
+        'https://staging.kesso.uk'
     ],
 
     'allowed_origins_patterns' => [],
